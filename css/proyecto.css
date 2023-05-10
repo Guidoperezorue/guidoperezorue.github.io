@@ -1,0 +1,443 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 0;
+  letter-spacing: .1rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: .5rem;
+  color: white;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: .5rem;
+  margin: 1.5rem 0;
+  z-index: 1;
+  line-height: 3.5rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: .5rem;
+  margin-bottom: 3rem;
+}
+
+.logo-verde {
+  max-width: 250px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.p-description {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.buttons-navigation{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5%;
+}
+
+/* NAV BAR (starts here)*/
+
+
+nav {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  background-color: rgba(36, 89, 122, 0.93);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  transition: all .25s linear
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  letter-spacing:0.25rem;
+  font-weight: 400
+}
+
+ul {
+  list-style: none
+}
+
+#logo-menu {
+  max-width: 250px;
+}
+
+.nav-bar {
+  display: flex;
+}
+
+.nav-bar li {
+  margin: 0 2rem
+}
+
+.nav-bar a {
+  transition: all .2s linear;
+}
+
+.nav-bar a:hover {
+  color: rgb(199, 199, 199);  
+}
+
+.nav-bar a:active {
+  color: rgb(0, 0, 0);
+    
+}
+
+.icon {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.5rem;
+  padding: 4px 8px;
+  display: none;
+}
+
+.nav-mobile {
+  display: none
+}
+
+
+
+/* NAV BAR (ends here)*/
+
+.background-overlay {
+  display: flex;
+  flex-direction: column;
+  /* gap: 150px; */
+  padding: 6rem 0;
+  background-color: rgba(255, 255, 255, 0.899)
+}
+
+.flex-container-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-flex-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.container-flex-wrap h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: .75rem;
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    color: black;
+    text-shadow: none;
+}
+
+
+.proyecto-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+
+.proyecto-text h2 {
+  margin-top: 0px;
+  text-align: center;
+  color: rgb(79, 79, 79);
+  font-size: 2rem;
+}
+
+
+
+.bg-body-proyecto-ind {
+  background-image: url("/media/images/backgrounds/background-proyecto-ind.jpg");
+  background-size: cover;
+  
+}
+
+/* ----CAROUSEL------
+--------------------
+---STARTS---HERE---*/
+
+.carousel-outer-wrapper{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.display-container{
+  position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0;
+height: 100%;
+width: 100%;
+max-width: 1000px;
+max-height: 700px;
+border-radius: 50px;
+transition: all .25s linear;
+box-shadow: 3px 3px 3px black;
+
+}
+
+.container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-radius: 50px;
+  margin: 0 auto;
+  width: 100%;
+  
+  position: relative;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  height: 100%
+}
+
+.slide {
+  min-width: 100%;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.slide-controls {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  justify-content: space-between;
+  align-items: center;
+  }
+
+  .black-controls {
+    left: -8%;
+    width: 116%;
+    display: flex;
+  }
+
+  
+  
+  #next-btn, #prev-btn {
+    cursor: pointer;
+    background: transparent;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    color: white;
+  }
+
+
+/* ----CAROUSEL------
+---ENDS---HERE---*/
+
+
+/* FOOTER SECTION */
+
+.footer-text-bold{
+  font-weight: 500;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(234,234,234);
+  color: black;
+  padding-bottom: 60px
+}
+
+.btn-whatsapp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: auto;
+  background-color: green;
+  padding: 20px 30px;
+  margin: 30px 0;
+  border-radius: 10px
+}
+
+.footer-text {
+  font-size: 1.4rem;
+  letter-spacing: .2rem;
+  line-height: 2.5rem;
+  z-index: 1;
+  text-align: center;
+}
+
+#social-media-container{
+  margin-top: 2rem;
+  display: flex;
+  gap: 25px;
+}
+
+.social-media-icon {
+max-width: 50px;
+border-radius: 30%;
+}
+
+
+
+/* MOBILE */
+
+@media screen and (max-width: 1280px) {
+  .nav-bar {
+    display: none;
+  }
+  .nav-mobile  {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    position: fixed;
+    top: 60px;
+    left: 0px;
+    background-color: rgba(36, 89, 122, 0.93);
+    width: 100%;
+    padding: 30px 30px;
+    transition: all .2s linear
+  }
+  .icon
+  {
+    display: block;
+    margin-right: 15px;
+  }
+
+    
+  .black-controls{
+    display: none
+  }
+  
+  .display-container {
+    box-shadow: none;
+  }
+  
+  .proyecto-text {
+    padding: 1.5rem
+  }
+
+  .container-flex-wrap h1 {
+    font-size: 2.5rem;
+    margin-top: 5rem;
+  }
+
+  .logo-verde {
+    margin-top: 5rem;
+  }
+
+  
+}
+
+@media screen and (max-width: 1000px){
+  .container, .slide {
+    border-radius: 0;
+  }
+.proyecto-text h2 {
+  font-size: 1.5rem;
+}
+  
+.p-description {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+}
+
+@media screen and (max-width: 425px) {
+
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 2.5rem;
+    letter-spacing: .1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+#logo-menu{
+  max-width: 180px;
+}
+
+  .bio-text {
+    font-size: .9rem;
+    letter-spacing: .05rem;
+    line-height: 1.4rem;
+    z-index: 1;
+  }
+
+.footer-text{
+  text-align: center;
+  font-size: .9rem;
+  letter-spacing: .05rem;
+}
+
+.text-background{
+  margin: 30px 20px;
+  border-radius: 50px;
+  }
+
+
+/* CAROUSEL MOBILE
+STARTS HERE */
+
+.container-flex-wrap h1 {
+  font-size: 2rem;
+}
+
+
+
+/* CAROUSEL MOBILE
+ENDS HERE */
+
+}
